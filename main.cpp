@@ -1,9 +1,7 @@
 #include <iostream>
-
 #include <fmt/core.h>
 
 int main() {
-    fmt::print("Hello World!\n");
-
+    fmt::println("Hello, World!");
     return EXIT_SUCCESS;
 }
