@@ -11,5 +11,8 @@
   }, {
     "name" : "fmt",
     "version>=" : "11.0.2#1"
+  }, {
+    "name" : "quantlib",
+    "version>=" : "1.37"
   } ]
 }
