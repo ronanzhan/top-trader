@@ -9,10 +9,13 @@
     "name" : "vcpkg-cmake",
     "version>=" : "2024-04-23"
   }, {
+    "name" : "quantlib",
+    "version>=" : "1.37"
+  }, {
     "name" : "fmt",
     "version>=" : "11.0.2#1"
   }, {
-    "name" : "quantlib",
-    "version>=" : "1.37"
+    "name" : "gtkmm",
+    "version>=" : "4.14.0"
   } ]
 }
