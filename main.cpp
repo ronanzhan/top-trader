@@ -1,32 +1,31 @@
 #include <iostream>
-#include <gtkmm.h>
+#include <fmt/core.h>
 
+#include <QApplication>
 
-class MyWindow : public Gtk::Window {
-public:
-    MyWindow();
-};
-
-MyWindow::MyWindow() {
-    set_title("Top Trader");
-    set_default_size(600, 400);
-}
+#include "ui/app_main_window.h"
 
 
 int initUI(int argc, char *argv[]) {
-    auto app = Gtk::Application::create("org.gtkmm.examples.base");
+    fmt::println("start initializing ui...");
 
-    return app->make_window_and_run<MyWindow>(argc, argv);
+    QApplication a(argc, argv);
+    //
+    AppMainWindow app_main_window;
+    app_main_window.show();
+
+
+    return a.exec();
 }
 
 int init(int argc, char *argv[]) {
-    initUI(argc, argv);
-    return 0;
+    return initUI(argc, argv);
 }
 
+
 int main(int argc, char *argv[]) {
-    init(argc, argv);
+    return init(argc, argv);
 
 
-    return EXIT_SUCCESS;
+    // return EXIT_SUCCESS;
 }
